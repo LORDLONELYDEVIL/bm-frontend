@@ -21,7 +21,7 @@ const CreateBook = () => {
     };
     setLoading(false);
     axios
-      .post('http://localhost:5555/books', data)
+      .post('https://bookstore-mini.netlify.app/books', data)
       .then(() => {
         setLoading(false);
         navigate('/');
