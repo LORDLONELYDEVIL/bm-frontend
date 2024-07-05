@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get('https://bookstore-min.netlify.app/books')
+            .get('https://book-model-mini-lw8ij7thb-lordlonelydevils-projects.vercel.app/books')
             .then((response) => {
                 setBooks(response.data.data);
                 setLoading(false);
