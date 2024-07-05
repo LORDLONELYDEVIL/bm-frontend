@@ -15,7 +15,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://bookstore-mini.netlify.app/books/${id}`)
+      .get(`https://bookstore-min.netlify.app/books/${id}`)
       .then((response) => {
         setBook(response.data.data);
         setLoading(false);
