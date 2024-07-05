@@ -40,7 +40,7 @@ const EditBook = () => {
     };
     setLoading(false);
     axios
-      .put(`https://bookstore-min.netlify.app/books/${id}`, data)
+      .put(`https://book-model-mini-lw8ij7thb-lordlonelydevils-projects.vercel.app/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate('/');
