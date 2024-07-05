@@ -15,7 +15,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://bookstore-min.netlify.app/books/${id}`)
+      .get(`https://book-model-mini-lw8ij7thb-lordlonelydevils-projects.vercel.app/books/${id}`)
       .then((response) => {
         setBook(response.data.data);
         setLoading(false);
