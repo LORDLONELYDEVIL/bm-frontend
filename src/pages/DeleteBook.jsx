@@ -12,7 +12,7 @@ const DeleteBook = () => {
   const handleBook = () => {
     setLoading(true);
     axios
-      .delete(`https://bookstore-mini.netlify.app/books/${id}`)
+      .delete(`https://bookstore-min.netlify.app/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");
