@@ -16,7 +16,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://bookstore-mini.netlify.app/${id}`)
+      .get(https://bookstore-min.netlify.app/books/${id}`)
       .then((response) => {
         setAuthor(response.data.data.author );
         setPublishYear(response.data.data.publishYear )
@@ -40,7 +40,7 @@ const EditBook = () => {
     };
     setLoading(false);
     axios
-      .put(`https://bookstore-mini.netlify.app/books/${id}`, data)
+      .put(`https://bookstore-min.netlify.app/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate('/');
