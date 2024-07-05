@@ -16,7 +16,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(https://bookstore-min.netlify.app/books/${id}`)
+      .get(`https://bookstore-min.netlify.app/books/${id}`)
       .then((response) => {
         setAuthor(response.data.data.author );
         setPublishYear(response.data.data.publishYear )
