@@ -21,7 +21,7 @@ const CreateBook = () => {
     };
     setLoading(false);
     axios
-      .post('https://bookstore-min.netlify.app//books', data)
+      .post('https://book-model-mini-lw8ij7thb-lordlonelydevils-projects.vercel.app/books', data)
       .then(() => {
         setLoading(false);
         navigate('/');
