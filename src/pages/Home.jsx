@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get('https://bookstore-min.netlify.app//books')
+            .get('https://bookstore-min.netlify.app/books')
             .then((response) => {
                 setBooks(response.data.data);
                 setLoading(false);
